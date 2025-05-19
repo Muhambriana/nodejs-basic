@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "NODE_ENV=development node app.js",
+    "start": "NODE_ENV=production node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
     "url": "https://github.com/Muhambriana/nodejs-basic/issues"
   },
   "homepage": "https://github.com/Muhambriana/nodejs-basic#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
