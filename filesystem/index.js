@@ -13,4 +13,13 @@ const fileReadCallback = (error, data) => {
   console.log(data)
 }
 
-fs.readFile(filePath, 'utf-8', fileReadCallback);
+// Async
+// fs.readFile(filePath, 'utf-8', fileReadCallback);
+
+// Sync
+try {
+  const data = fs.readFileSync(filePath, 'utf-8');
+  console.log(data);
+} catch (error) {
+  console.log('Failed to read file');
+}
